@@ -3,6 +3,8 @@ function heartFly(){
 	var holder = document.getElementById('heart-holder')
 	for(var i = 0 ; i< 15 ; i++){
 		setTimeout(function(){
+			var audio = new Audio('pop.mp3');
+			audio.play();
 			var heart = document.createElement('span')
 			heart.style.position = "absolute"
 			heart.classList.add('heart')
@@ -12,8 +14,6 @@ function heartFly(){
 			heart.style.fontSize = Math.random() * 20 + 5 + 'px'
 			heart.style.animation = "fly 3s linear forward"
 			heart.style.animationDuration = Math.random() * 2 + 3 + 's';
-			var audio = new Audio('pop.mp3');
-			audio.play();
 			holder.appendChild(heart)
 			setTimeout(function(){
 				heart.remove()

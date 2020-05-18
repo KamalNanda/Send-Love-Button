@@ -46,5 +46,7 @@ footer{
   font-size: 24px;
   margin-left: 5%;
   color: black;
-  font-family: cursive;
+}
+@media (max-width : 525px){
+  footer{font-size: 32px}
 }
